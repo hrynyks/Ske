@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Mplus 1p';
+    src: url('/src/assets/fonts/Mplus1p-Bold.woff2') format('woff2'),
+        url('/src/assets/fonts/Mplus1p-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mplus 1p';
+    src: url('/src/assets/fonts/Mplus1p-ExtraBold.woff2') format('woff2'),
+        url('/src/assets/fonts/Mplus1p-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mplus 1p';
+    src: url('/src/assets/fonts/Mplus1p-Regular.woff2') format('woff2'),
+        url('/src/assets/fonts/Mplus1p-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

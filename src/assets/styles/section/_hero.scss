@@ -1,0 +1,54 @@
+.hero {
+    background: url(/src/assets/images/hero-bg.jpg) no-repeat center/cover;
+    padding: 91px 0 120px;
+
+    &__title {
+        font-size: toRem(64);
+        line-height: 72px;
+        font-weight: 700;
+        color: #323A49;
+        max-width: 450px;
+        margin-bottom: 30px;
+
+        @include a (tablet) {
+            max-width: 400px;
+            line-height: 60px;
+        }
+
+        @include a (mobile) {
+            max-width: 270px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__descr {
+        font-size: toRem(18);
+        line-height: 30px;
+        color: #323A49;
+        max-width: 450px;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        font-size: toRem(18);
+        color: #275BA8;
+        border: 1px solid #2054A2;
+        border-radius: 5px;
+        padding: 15px 0;
+        background-color: transparent;
+        width: 250px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(/src/assets/images/hero-btn-arrow.svg);
+            width: 21px;
+            height: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 50px;
+        }
+    }
+}

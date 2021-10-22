@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    @include a (laptop) {
+        font-size: 12px;
+    }
+
+    @include a (tablet-xl) {
+        font-size: 10px;
+    }
+
+    @include a (tablet) {
+        font-size: 8px;
+    }
+
+    @include a (mobile) {
+        font-size: 6px;
+    }
+}
+
+@function toRem($value) {
+    $remValue: ($value / 14) + rem;
+    @return $remValue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1107px;
+    margin: 0 auto;
+
+    @include a (laptop) {
+        max-width: 95%;
+    }
+}
+
+
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+input {
+    outline: none;
+    display: inline-block;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
